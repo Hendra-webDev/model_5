@@ -1,0 +1,486 @@
+@charset "utf-8";
+
+/* CSS Document */
+.wrapper-cover {
+   height: 100%;
+   position: relative;
+}
+
+.wrapper-cover::after {
+   background: linear-gradient(180deg, rgba(13, 13, 13, 0) 0%, rgba(13, 13, 13, 1) 100%);
+   content: '';
+   width: 100%;
+   height: 100%;
+   display: block;
+   z-index: 1;
+   position: absolute;
+   bottom: 0;
+}
+
+.bg-overlay {
+   width: 100%;
+   height: 100%;
+   position: absolute;
+   z-index: 1;
+}
+
+.wrapper-cover .image-cover {
+   width: 100%;
+   height: 100%;
+}
+
+.wrapper-cover .cover-bg {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+   object-position: center;
+}
+
+.wrapper-cover .wrapper-text {
+   width: 100%;
+   bottom: 40%;
+   position: absolute;
+   z-index: 999;
+}
+
+.wrapper-cover .wrapper-text .invitation-text {
+   text-align: center;
+   color: #a7aa05;
+   letter-spacing: 1.3rem;
+   font-size: 1.9em;
+   font-family: 'Roboto', sans-serif;
+}
+
+.wrapper-cover .nama-pengantin {
+   font-size: 5.9em;
+   margin-top: 20px;
+}
+
+.title {
+   font-size: 3em;
+   color: #a7aa05;
+}
+
+.font-jalan {
+   font-family: 'Rouge Script', cursive;
+}
+
+p {
+   font-family: 'Roboto', sans-serif;
+}
+
+.wrapper-profil {
+   color: #fff;
+   background-color: #0d0d0d;
+   display: flex;
+   flex-flow: column;
+   align-items: center;
+   padding: 90px 0;
+   font-size: 1.4em;
+}
+
+.wrapper-profil .profil-content {
+   width: 100%;
+   text-align: center;
+}
+
+.wrapper-profil img.rounded-circle {
+   width: 250px;
+   height: 250px;
+}
+
+.wrapper-profil .nama {
+   font-size: 3em;
+   color: #a7aa05;
+}
+
+.wrapper-profil span {
+   font-size: 3em;
+   color: #a7aa05;
+}
+
+.wrapper-profil .profil-content .profile-colum>div {
+   width: 40%;
+}
+
+.wrapper-profil .profil-content .profile-colum>span {
+   width: 10%;
+}
+
+.wrapper-video {
+   background-color: #0d0d0d;
+   padding: 100px 0 150px 0;
+}
+
+.wrapper-video iframe {
+   width: 100%;
+   height: 700px;
+   object-fit: cover;
+}
+
+.wrapper-pray {
+   background-color: #0d0d0d;
+   color: #fff;
+   display: flex;
+   flex-flow: row;
+   font-family: 'Roboto', sans-serif;
+}
+
+.wrapper-pray>div:first-child {
+   width: 60%;
+   display: flex;
+   flex-flow: column;
+   justify-content: center;
+   padding: 50px 150px;
+}
+
+.wrapper-pray>div:first-child>p:first-child {
+   color: #a7aa05;
+}
+
+.wrapper-pray>div:first-child>p {
+   font-size: 28px;
+}
+
+.wrapper-pray>div:last-child {
+   width: 40%;
+}
+
+.wrapper-pray .img-left {
+   width: 100%;
+   max-height: 900px;
+   object-fit: cover;
+   object-position: center;
+}
+
+.wrapper-pray .img-wrapper-left::before {
+   background: linear-gradient(0deg, rgba(13, 13, 13, 0) 0%, rgba(13, 13, 13, 1) 100%);
+   content: '';
+   width: 100%;
+   height: 20%;
+   display: block;
+   z-index: 1;
+   position: absolute;
+}
+
+.wrapper-pray .img-wrapper-left::after {
+   background: linear-gradient(180deg, rgba(13, 13, 13, 0) 0%, rgba(13, 13, 13, 1) 100%);
+   content: '';
+   width: 100%;
+   height: 30%;
+   display: block;
+   z-index: 1;
+   position: absolute;
+   bottom: 0;
+}
+
+.wrapper-lokasi {
+   display: flex;
+   align-items: center;
+   color: #fff;
+   background-color: #0d0d0d;
+   flex-flow: column;
+}
+
+.wrapper-lokasi .content-acara {
+   width: 60%;
+   display: flex;
+   align-items: center;
+   flex-flow: column;
+   font-size: 23px;
+   text-align: center;
+}
+
+.countdown {
+   margin-top: 30px;
+   height: 140px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.countdown div {
+   position: relative;
+   width: auto;
+   height: 90px;
+   line-height: 100px;
+   text-align: center;
+   color: #fff;
+   margin: 0 15px;
+   font-size: 2.3em;
+   font-weight: 400;
+   font-family: 'Roboto', sans-serif;
+}
+
+.countdown div:before {
+   content: '';
+   position: absolute;
+   bottom: -30px;
+   left: 0;
+   width: 100%;
+   height: 35px;
+   color: #fff;
+   font-size: 0.45em;
+   line-height: 10px;
+   font-weight: 400;
+}
+
+.countdown #day:before {
+   content: 'Hari';
+   font-size: 20px;
+   font-family: 'Roboto', sans-serif;
+}
+
+.countdown #hour:before {
+   content: 'Jam';
+   font-size: 20px;
+   font-family: 'Roboto', sans-serif;
+}
+
+.countdown #minute:before {
+   content: 'Menit';
+   font-size: 20px;
+   font-family: 'Roboto', sans-serif;
+}
+
+.countdown #second:before {
+   content: 'Detik';
+   font-size: 20px;
+   font-family: 'Roboto', sans-serif;
+}
+
+#mapid {
+   width: 100%;
+   height: 500px;
+}
+
+.mymap {
+   font-size: 20px;
+   font-family: 'Rouge Script', cursive;
+   text-align: center;
+}
+
+.wrapper-galeri {
+   background-color: #0d0d0d;
+   color: #fff;
+   align-items: center;
+   font-size: 22px;
+   text-align: center;
+   padding: 20px 10px;
+}
+
+.overlay {
+   width: 0;
+   height: 0;
+   overflow: hidden;
+   position: fixed;
+   top: 0;
+   left: 0;
+   background: rgba(0, 0, 0, 0);
+   z-index: 9999;
+   -webkit-transition: 1s;
+   transition: 1s;
+   text-align: center;
+   padding: 100px 0;
+}
+
+.overlay:target {
+   width: auto;
+   height: auto;
+   bottom: 0;
+   right: 0;
+   background: rgba(0, 0, 0, 0.7);
+
+}
+
+.overlay img {
+   max-height: 100%;
+   width: 90%;
+   box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.8);
+   border: solid white;
+
+}
+
+.overlay:target img {
+   -webkit-animation: zoomAndFade 1s;
+   animation: zoomAndFade 1s;
+}
+
+.overlay .close {
+   position: absolute;
+   top: 60px;
+   left: 90%;
+   margin-left: -20px;
+   color: white;
+
+}
+
+.next,
+.prev {
+   width: 60px;
+   height: 600px;
+   position: absolute;
+   /*background-image: url(foto/next.png);*/
+   text-indent: -9999px;
+   margin-left: -50px;
+}
+
+.prev {
+   margin-left: -10px;
+}
+
+.title-end {
+   text-align: center;
+   font-weight: normal;
+   min-height: 200px;
+}
+
+.title-end .left {
+   position: absolute;
+   transform: translate(-110%, 60%);
+}
+
+.title-end .center {
+   font-size: 200px;
+   left: 50%;
+   top: 50%;
+   transform: translate(-50%, -50%);
+}
+
+.title-end .right {
+   position: absolute;
+   transform: translate(3%, 130%);
+}
+
+footer {
+   background-color: #0d0d0d;
+   color: #fff;
+}
+
+@media (max-width: 768px) {
+   .title {
+      font-size: 1.8em;
+   }
+
+   .title-2 {
+      font-size: 19px;
+   }
+
+   .wrapper-cover .wrapper-text {
+      bottom: 20%;
+   }
+
+   .wrapper-cover .wrapper-text .invitation-text {
+      letter-spacing: 0.4rem;
+      font-size: 0.9em;
+   }
+
+   .wrapper-cover .nama-pengantin {
+      font-size: 2.9em;
+      margin-top: 5px;
+   }
+
+   .wrapper-profil .profil-content {
+      padding: 30px;
+      font-size: 1em;
+   }
+
+   .wrapper-profil .nama {
+      font-size: 1.9em;
+   }
+
+   .wrapper-profil .profil-content .profile-colum>div {
+      width: 100%;
+   }
+
+   .wrapper-profil .profil-content .profile-colum>span {
+      width: 100%;
+      margin: 35px 0;
+   }
+
+   .wrapper-video {
+      padding: 70px 0;
+   }
+
+   .wrapper-video iframe {
+      height: 300px;
+   }
+
+   .wrapper-pray {
+      flex-flow: column;
+   }
+
+   .wrapper-pray>div:last-child {
+      width: 100%;
+   }
+
+   .wrapper-pray>div:first-child {
+      width: 100%;
+      padding: 50px 30px;
+   }
+
+   .wrapper-pray>div:first-child>p {
+      font-size: 17.5px;
+   }
+
+   .wrapper-lokasi .content-acara {
+      width: 100%;
+      font-size: 17px;
+      padding: 0 28px;
+   }
+
+   .countdown {
+      margin-top: 0px;
+   }
+
+   .countdown div {
+      font-size: 23px;
+   }
+
+   #mapid {
+      height: 350px;
+   }
+
+   .title-end .left {
+      transform: translate(-110%, 80%);
+   }
+
+   .title-end .center {
+      font-size: 3.8em;
+   }
+
+   .title-end .right {
+      transform: translate(3%, 190%);
+   }
+}
+
+@-webkit-keyframes zoomAndFade {
+   0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   }
+
+   100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   }
+}
+
+@keyframes zoomAndFade {
+   0% {
+      -webkit-transform: scale(0);
+      transform: scale(0);
+      opacity: 0;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+   }
+
+   100% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 1;
+      -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+   }
+}
